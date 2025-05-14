@@ -1,8 +1,8 @@
 const { ask } = require('../helpers/input.js');
 
 async function main() {
-  
   const a = Number(await ask('Ingresa el primer número'));
+  
   const b = Number(await ask('Ingresa el segundo número'));
   let suma = a+b;
   let resta = a-b;
