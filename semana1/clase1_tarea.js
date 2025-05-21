@@ -1,24 +1,20 @@
 // Ejercicio: Crear una calculadora simple que realice operaciones básicas (suma, resta, multiplicación y división) entre dos números.
 
-const { ask } = require('../helpers/input');
+const { ask } = require('../helpers/input.js');
 
 async function main() {
-  const num1 = Number(await ask('Ingresa el primer número: '));
-  const num2 = Number(await ask('Ingresa el segundo número: '));
+  
+  const a = Number(await ask('Ingresa el primer número'));
+  const b = Number(await ask('Ingresa el segundo número'));
+  let suma = a+b;
+  let resta = a-b;
+  let multiplicacion = a*b;
+  let division = a/b;
 
-  const suma = num1 + num2;
-  const resta = num1 - num2;
-  const multiplicación = num1 * num2;
-  const division = num1 / num2;
-  // TODO: Implementar la resta, multiplicación y división
-
-  console.log('Suma:', suma);
-  console.log('resta:', resta);
-  console.log('Multiplicación:', multiplicación);
-  console.log('División:', division);
-
-  // TODO: Mostrar el resultado de la resta, multiplicación y división
-
+  console.log(`La suma de número ${a} y  número ${b} es ${suma}.`);
+  console.log(`La resta de número ${a} y  número ${b} es ${resta}.`);
+  console.log(`La multiplicación de número ${a} y  número ${b} es ${multiplicacion}.`);
+  console.log(`La divición de número ${a} y  número ${b} es ${division}.`);
 }
 
 main();
