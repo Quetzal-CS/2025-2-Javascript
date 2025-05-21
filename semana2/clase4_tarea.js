@@ -12,3 +12,21 @@
 //Promedio general
 //
 //La calificación más alta y la más baja
+const { ask } = require('../helpers/input.js');
+
+async function main() {
+    const calificaciones = [];
+    let calificacion;
+
+    do {
+        calificacion = Number(await ask('Ingresa una calificación (o -1 para terminar): '));
+        if (calificacion !== -1) {
+            calificaciones.push(calificacion);
+        }
+    } while (calificacion !== -1);
+
+    const resultado = analizarCalificaciones(calificaciones);
+    console.log(resultado);
+}
+
+main();
