@@ -6,35 +6,35 @@ const { ask } = require('../helpers/input');
 
 async function main() {
   const dia = Number(await ask("Ingresa un número del 1 al 7:"));
-  const diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+  const Semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
 
   if (dia >= 1 && dia <= 7) {
-    console.log(diasSemana[dia - 1]);
+    console.log(Semana[dia - 1]);
   } else {
     console.log("No es un número válido");
   }
 
   switch (dia) {
     case 1:
-      console.log(diasSemana[0]);
+      console.log(Semana[0]);
       break;
     case 2:
-      console.log(diasSemana[1]);
+      console.log(Semana[1]);
       break;
     case 3:
-      console.log(diasSemana[2]);
+      console.log(Semana[2]);
       break;
     case 4:
-      console.log(diasSemana[3]);
+      console.log(Semana[3]);
       break;
     case 5:
-      console.log(diasSemana[4]);
+      console.log(Semana[4]);
       break;
     case 6:
-      console.log(diasSemana[5]);
+      console.log(Semana[5]);
       break;
     case 7:
-      console.log(diasSemana[6]);
+      console.log(Semana[6]);
       break;
     default:
       console.log("No es un número válido");
