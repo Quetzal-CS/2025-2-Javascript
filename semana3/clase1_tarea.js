@@ -15,3 +15,11 @@
 // El promedio general de calificaciones.
 // La calificación mayor.
 // La calificación menor.
+const { ask } = require('../helpers/input.js');
+
+async function main() {
+  
+  
+}
+
+main();
